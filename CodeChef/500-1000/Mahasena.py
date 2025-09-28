@@ -23,8 +23,6 @@ if the army satisfies the conditions that Kattapa requires
 or "NOT READY" otherwise.
 """
 
-# ------------------- Solution -------------------
-
 N = int(input())                
 A = list(map(int, input().split()))   
 
@@ -32,9 +30,9 @@ lucky = 0
 unlucky = 0
 
 for weapons in A:
-    if weapons % 2 == 0:   # even -> lucky
+    if weapons % 2 == 0:  
         lucky += 1
-    else:                  # odd -> unlucky
+    else:                 
         unlucky += 1
 
 if lucky > unlucky:
