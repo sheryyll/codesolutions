@@ -14,7 +14,7 @@ For each test case, output the minimum number of candy packets Chef must buy so 
 
 t = int(input())
 for _ in range(t):
-    n, x = map(int, input().split())
+    n,x = map(int, input().split())
     need = n - x
     if need <= 0:
         print(0)
